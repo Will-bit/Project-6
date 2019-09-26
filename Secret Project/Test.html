@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Secret Project!!!!</title>
+<style>
+  * { margin: 0; overflow:hidden; padding:0;}
+
+  html { height: 100%; width: 100% }
+
+  #gameScreen{
+    border: 1px solid black;
+  }
+
+  img {
+    display:none;
+  }
+
+  canvas { align-self: center;
+    justify-self: center;
+
+  }
+
+
+
+  </style>
+  </head>
+  <body>
+<img id="ship" src="assets/images/ship.gif">
+
+<canvas></canvas>
+
+ 
+
+<script type= "text/javascript">
+
+var context = document.querySelector("canvas").getContext("2d");
+
+function loop() {
+  window.requestAnimationFrame(loop);
+}
+
+loop();
+</script>
+
+  </body>
+</html>
